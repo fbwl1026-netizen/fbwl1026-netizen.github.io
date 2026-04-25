@@ -3,68 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>나의 취향 저장소</title>
+    <title>나의 취향 저장소: 기록과 감성</title>
     <style>
-        /* 1. 배경 설정: 보내주신 사진의 청량한 하늘색 느낌 */
+        /* 1. 배경 설정: 보내주신 사진의 청량한 느낌 */
         body { 
             font-family: 'Apple SD Gothic Neo', 'Nanum Gothic', sans-serif; 
             line-height: 1.8; 
-            max-width: 700px; 
+            max-width: 800px; 
             margin: 0 auto; 
-            padding: 60px 20px;
+            /* 여백의 미를 위해 상하 패딩을 넉넉히 줍니다 */
+            padding: 100px 20px; 
             background-color: #e0f2f1; /* 청량한 민트 하늘색 */
-            color: #2c3e50;
+            color: #334e4e;
         }
 
-        /* 2. 제목: 디자인 수업 느낌을 살린 깔끔한 폰트 */
+        /* 2. 제목: 깔끔하고 감각적인 배치 */
         h1 { 
-            text-align: center;
+            text-align: left;
             color: #00796b; 
-            font-size: 2.2em;
-            margin-bottom: 50px;
-            letter-spacing: -1px; /* 글자 간격을 좁혀 디자인 감각 추가 */
+            font-size: 2.6em;
+            margin-bottom: 80px;
+            font-weight: 800;
+            letter-spacing: -1px;
         }
 
-        /* 3. 콘텐츠 박스: 여백(Negative Space)을 충분히 준 깔끔한 디자인 */
+        /* 3. 콘텐츠 박스: 여백(Negative Space)을 극대화한 디자인 */
         .content-box { 
-            background: rgba(255, 255, 255, 0.9); /* 살짝 투명한 흰색 */
-            padding: 40px; 
-            border-radius: 20px; 
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
-            margin-bottom: 30px;
+            background: rgba(255, 255, 255, 0.95); 
+            padding: 60px; /* 박스 내부 여백을 아주 넓게 주어 시원한 느낌 유도 */
+            border-radius: 30px; 
+            box-shadow: 0 20px 40px rgba(0,0,0,0.04); 
+            margin-bottom: 50px;
         }
 
         h2 { 
-            color: #333; 
-            font-size: 1.5em;
-            margin-top: 0;
+            color: #222; 
+            font-size: 1.7em;
+            margin: 10px 0 25px 0;
         }
 
+        /* 태그: 사진 속 노란 표지판 포인트 색상 */
         .tag { 
             display: inline-block;
-            color: #fbc02d; /* 사진 속 표지판의 노란색 포인트 */
+            color: #fbc02d; 
             font-weight: bold; 
-            margin-bottom: 15px;
-            font-size: 0.9em;
+            font-size: 1em;
+            margin-bottom: 10px;
         }
 
-        p { color: #555; }
+        p { 
+            color: #555; 
+            font-size: 1.1em;
+            word-break: keep-all; /* 한글 문장이 예쁘게 끊기도록 설정 */
+        }
     </style>
 </head>
 <body>
 
-    <h1>🌿 나의 기록: 책과 캐릭터</h1>
+    <h1>📚 나의 취향 저장소</h1>
 
     <div class="content-box">
-        <span class="tag">#내가 좋아하는 책</span>
-        <h2>책 제목을 입력하세요</h2>
-        <p>이곳에 책에 대한 소개와 좋아하는 이유를 적어주세요. 디자인 과제라면 여백을 생각하며 문단을 나누는 것도 좋습니다.</p>
+        <span class="tag">#내가 사랑하는 책</span>
+        <h2>책 제목을 여기에 적어주세요</h2>
+        <p>이곳에 책에 대한 소개를 적어보세요. 사진 속 바닷가 도로처럼 시원한 느낌이 들도록 문장을 간결하게 다듬어보시는 건 어떨까요? 여백이 주는 편안함을 느껴보세요.</p>
     </div>
 
     <div class="content-box">
-        <span class="tag">#내가 좋아하는 캐릭터</span>
-        <h2>캐릭터 이름을 입력하세요</h2>
-        <p>좋아하는 캐릭터의 매력을 설명해 보세요. 사진 속 풍경처럼 따뜻하고 청량한 느낌의 캐릭터인가요?</p>
+        <span class="tag">#나의 최애 캐릭터</span>
+        <h2>캐릭터 이름을 적어주세요</h2>
+        <p>좋아하는 캐릭터의 특징을 설명해 보세요. 디자인 수업에서 강조하는 '선과 면의 조화'를 생각하며 글을 배치해 보면 더 멋진 과제물이 될 거예요.</p>
     </div>
 
 </body>

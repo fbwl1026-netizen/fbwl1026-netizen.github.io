@@ -1,127 +1,35 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>나의 특별한 기록: 책과 캐릭터</title>
-    <style>
-        /* [1. 전체 필체와 배경색 바꾸기] */
-        body { 
-            /* 눈이 편한 나눔고딕 글꼴 사용 (컴퓨터에 없으면 기본 고딕) */
-            font-family: 'Nanum Gothic', 'Apple SD Gothic Neo', sans-serif; 
-            line-height: 1.8; 
-            max-width: 900px; 
-            margin: 0 auto; 
-            padding: 50px 20px;
-            
-            /* 연한 베이지색 배경 (#fdfcf0) */
-            background-color: #fdfcf0; 
-            color: #333;
-        }
+<style>
+    /* 전체 배경: 보내주신 이미지의 연한 하늘색과 유사한 파스텔 톤 */
+    body { 
+        font-family: 'Apple SD Gothic Neo', sans-serif; 
+        line-height: 1.8; 
+        max-width: 800px; 
+        margin: 0 auto; 
+        padding: 40px;
+        background-color: #e0f2f1; /* 아주 연한 민트/하늘색 */
+    }
 
-        /* 메인 제목 꾸미기 */
-        h1 { 
-            text-align: center;
-            color: #4a6741; /* 진한 녹색 */
-            font-size: 2.5em;
-            margin-bottom: 50px;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* 미세한 그림자 */
-        }
+    h1 { 
+        text-align: center;
+        color: #00796b; /* 진한 민트색으로 청량감 강조 */
+        border-bottom: 2px solid #00796b; 
+        padding-bottom: 10px; 
+    }
 
-        h2 {
-            color: #555;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 10px;
-            margin-top: 0;
-        }
+    /* 콘텐츠 박스: 반투명한 흰색으로 배경색이 은은하게 비치도록 */
+    .content-box { 
+        background-color: rgba(255, 255, 255, 0.85); 
+        padding: 20px; 
+        border-radius: 10px; 
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        margin-bottom: 20px;
+    }
 
-        /* 콘텐츠 박스 디자인 업그레이드 */
-        .content-box { 
-            background: white; 
-            padding: 30px; 
-            border-radius: 15px; /* 더 둥글게 */
-            /* 은은하고 고급스러운 그림자 */
-            box-shadow: 0 10px 20px rgba(0,0,0,0.05); 
-            margin-bottom: 40px;
-            display: flex; /* 이미지와 글을 옆으로 배치하기 위해 사용 */
-            gap: 20px; /* 이미지와 글 사이 간격 */
-            align-items: flex-start;
-        }
+    h2 { color: #555; }
 
-        /* [2. 이미지 들어갈 자리 꾸미기] */
-        .item-image {
-            width: 150px; /* 이미지 너비 고정 */
-            height: 150px; /* 이미지 높이 고정 (정사각형) */
-            background-color: #eee; /* 이미지가 없을 때 보일 회색 배경 */
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #888;
-            font-size: 0.9em;
-            overflow: hidden; /* 이미지가 넘치면 자름 */
-            flex-shrink: 0; /* 박스가 작아져도 이미지 크기 유지 */
-        }
-
-        .item-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* 이미지가 비율 깨지지 않게 꽉 채움 */
-        }
-
-        .item-details {
-            flex: 1; /* 남은 공간을 글이 꽉 채움 */
-        }
-
-        .tag { 
-            display: inline-block;
-            background-color: #eef2e6; /* 연한 녹색 배정 */
-            color: #4a6741;
-            padding: 5px 10px;
-            border-radius: 5px;
-            font-weight: bold;
-            font-size: 0.9em;
-            margin-bottom: 10px;
-        }
-
-        /* 반응형 디자인: 화면이 작아지면 이미지와 글을 위아래로 배치 */
-        @media (max-width: 600px) {
-            .content-box {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-            }
-            .item-image {
-                margin-bottom: 10px;
-            }
-        }
-    </style>
-</head>
-<body>
-
-    <h1>🌿 나의 작은 서재 & 컬렉션</h1>
-
-    <div class="content-box">
-        <div class="item-image">
-            <span>책 이미지</span> </div>
-        
-        <div class="item-details">
-            <h2>내가 사랑하는 한 권의 책</h2>
-            <p class="tag">#책제목입력</p>
-            <p>이 책의 어떤 문장이 가슴에 남았나요? 혹은 어떤 표지가 마음에 들었나요? 그 이유를 자유롭게 적어보세요. 이 책을 읽으며 느꼈던 감정을 공유해 보는 것도 좋습니다.</p>
-        </div>
-    </div>
-
-    <div class="content-box">
-        <div class="item-image">
-            <span>캐릭터 이미지</span> </div>
-
-        <div class="item-details">
-            <h2>내 마음속 최고의 캐릭터</h2>
-            <p class="tag">#캐릭터이름입력</p>
-            <p>이 캐릭터의 디자인, 성격, 혹은 명대사 중 무엇이 가장 매력적인가요? 그 매력을 자세히 설명해 보세요. 이 캐릭터를 생각하면 어떤 기분이 드는지 적어보는 것도 좋습니다.</p>
-        </div>
-    </div>
-
-</body>
-</html>
+    /* 태그: 이미지 속 표지판의 노란색 포인트 사용 */
+    .tag { 
+        color: #fbc02d; /* 진한 노란색 */
+        font-weight: bold; 
+    }
+</style>

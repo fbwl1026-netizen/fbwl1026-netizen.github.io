@@ -3,42 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>나의 기록: 책과 캐릭터</title>
+    <title>나의 취향 저장소</title>
     <style>
-        /* 간단한 디자인 추가 */
+        /* 1. 배경 설정: 보내주신 사진의 청량한 하늘색 느낌 */
         body { 
-            font-family: 'Apple SD Gothic Neo', sans-serif; 
+            font-family: 'Apple SD Gothic Neo', 'Nanum Gothic', sans-serif; 
             line-height: 1.8; 
-            max-width: 800px; 
+            max-width: 700px; 
             margin: 0 auto; 
-            padding: 40px;
-            background-color: #f9f9f9;
+            padding: 60px 20px;
+            background-color: #e0f2f1; /* 청량한 민트 하늘색 */
+            color: #2c3e50;
         }
-        h1 { color: #2c3e50; border-bottom: 2px solid #2c3e50; padding-bottom: 10px; }
+
+        /* 2. 제목: 디자인 수업 느낌을 살린 깔끔한 폰트 */
+        h1 { 
+            text-align: center;
+            color: #00796b; 
+            font-size: 2.2em;
+            margin-bottom: 50px;
+            letter-spacing: -1px; /* 글자 간격을 좁혀 디자인 감각 추가 */
+        }
+
+        /* 3. 콘텐츠 박스: 여백(Negative Space)을 충분히 준 깔끔한 디자인 */
         .content-box { 
-            background: white; 
-            padding: 20px; 
-            border-radius: 10px; 
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
-            margin-bottom: 20px;
+            background: rgba(255, 255, 255, 0.9); /* 살짝 투명한 흰색 */
+            padding: 40px; 
+            border-radius: 20px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
+            margin-bottom: 30px;
         }
-        .tag { color: #e67e22; font-weight: bold; }
+
+        h2 { 
+            color: #333; 
+            font-size: 1.5em;
+            margin-top: 0;
+        }
+
+        .tag { 
+            display: inline-block;
+            color: #fbc02d; /* 사진 속 표지판의 노란색 포인트 */
+            font-weight: bold; 
+            margin-bottom: 15px;
+            font-size: 0.9em;
+        }
+
+        p { color: #555; }
     </style>
 </head>
 <body>
 
-    <h1>📖 나의 취향 저장소</h1>
+    <h1>🌿 나의 기록: 책과 캐릭터</h1>
 
     <div class="content-box">
-        <h2>📚 내가 좋아하는 책</h2>
-        <p class="tag">#책제목입력</p>
-        <p>이 책을 좋아하는 이유나 인상 깊은 구절을 여기에 적어보세요.</p>
+        <span class="tag">#내가 좋아하는 책</span>
+        <h2>책 제목을 입력하세요</h2>
+        <p>이곳에 책에 대한 소개와 좋아하는 이유를 적어주세요. 디자인 과제라면 여백을 생각하며 문단을 나누는 것도 좋습니다.</p>
     </div>
 
     <div class="content-box">
-        <h2>✨ 내가 좋아하는 캐릭터</h2>
-        <p class="tag">#캐릭터이름입력</p>
-        <p>캐릭터의 특징이나 왜 이 캐릭터를 선택했는지 설명해 보세요.</p>
+        <span class="tag">#내가 좋아하는 캐릭터</span>
+        <h2>캐릭터 이름을 입력하세요</h2>
+        <p>좋아하는 캐릭터의 매력을 설명해 보세요. 사진 속 풍경처럼 따뜻하고 청량한 느낌의 캐릭터인가요?</p>
     </div>
 
 </body>

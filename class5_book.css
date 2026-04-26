@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(255, 249, 209);
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    color: #ad842c;
+}
+
+p {
+    background-color: #b6a595;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+a {
+    color: #318a3d;
+    text-decoration: none;
+}
